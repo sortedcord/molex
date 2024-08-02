@@ -1,0 +1,15 @@
+- paths:
+    CONFIG_PATH: '.config/molex'
+    INSTALLATION_PATH: '.local/share/molex'
+- metadata:
+    DELIMITERS:
+        ALBUM_TITLE:
+            - ';'
+        SONG_TITLE:
+            - ';'
+        ARTIST:
+            - ';'
+            - '/'
+        SPLIT_EXCEPTIONS:
+    PROCESS_ARTIST_ROLES: True
+
