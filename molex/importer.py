@@ -1,6 +1,7 @@
 from tinytag import TinyTag
 from main import ArtistRole, RoleDict, Tag, Artist, Track, Album
 from utils import split_tag
+from config import load_config
 
 import re
 
@@ -8,7 +9,7 @@ def process_tags(tag_object: TinyTag):
     
 
     # Process titles
-    titles = split_tag(tag_object.title)
+    titles = split_tag(tag_object.title, load_config().metadata.DELIMITERS['SONG_TITLE'])
     # Extract featured artist
     _featured_artists = []
     feat_patterns = [
