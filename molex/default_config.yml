@@ -1,5 +1,4 @@
 - paths:
-    CONFIG_PATH: '.config/molex'
     INSTALLATION_PATH: '.local/share/molex'
 - metadata:
     DELIMITERS:

@@ -54,5 +54,3 @@ def load_config(config_path=None) -> Config:
         setattr(config_obj, group_name, config_group_obj)
 
     return config_obj
-
-# print(load_config().metadata.DELIMITERS.value['SONG_TITLE'])
